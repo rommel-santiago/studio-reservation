@@ -12,11 +12,13 @@ import java.io.Serializable;
 @Entity
 @Getter
 @Setter
-public class Admin {
+public class Owner implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String username;
+    private String password;
+    private String level;
 
 }
